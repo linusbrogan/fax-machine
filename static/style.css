@@ -1,0 +1,95 @@
+body {
+	background: #b2dfdb;
+	font-family: sans-serif;
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+header {
+	background-color: #004d40;
+	color: white;
+	display: flex;
+	filter: drop-shadow(2px 2px 4px black);
+	flex-grow: 1;
+	justify-content: center;
+	width: 100%;
+}
+
+h1 {
+	margin: 20px;
+	width: 100%;
+	max-width: 800px;
+}
+
+h1 span {
+	padding-left: 20px;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+.card-container {
+	max-width: 800px;
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+.card {
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 2px 2px 4px black;
+	color: black;
+	display: block;
+	flex-grow: 1;
+	line-height: 24pt;
+	font-weight: bold;
+	justify-content: center;
+	margin: 30px 10px;
+	padding: 30px;
+	text-decoration: none;
+	width: 100%;
+}
+
+input[type=tel], input[type=file] {
+	background-color: #b2dfdb;
+	border: 2px solid #b2dfdb;
+	border-bottom: 2px solid #004d40;
+	border-radius: 4px;
+	padding: 6px;
+}
+
+input[type=tel]:focus, input[type=file]:focus {
+	outline-color: #004d40;
+}
+
+input[type=file]::file-selector-button {
+	display: none;
+}
+
+input[type=submit] {
+	background-color: #00796b;
+	border: 2px solid #00796b;
+	border-radius: 50%;
+	box-shadow: 2px 2px 4px black;
+	color: white;
+	float: right;
+	font-weight: bold;
+	padding: 8pt;
+}
+
+input[type=submit]:focus, input[type=submit]:hover {
+	box-shadow: 1px 1px 2px black;
+	outline: none
+}
+
+input[type=submit]:active {
+	box-shadow: none;
+}

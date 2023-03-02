@@ -1,0 +1,6 @@
+# Wrangler files
+.dev.vars
+.wrangler
+
+# Installed packages
+node_modules

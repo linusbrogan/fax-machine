@@ -1,0 +1,25 @@
+name = "fax-machine"
+main = "src/main.js"
+compatibility_date = "2023-02-25"
+rules = [
+	{type = "Text", globs = ["**/*.css"], fallthrough = true},
+	{type = "Data", globs = ["**/*.png"], fallthrough = true}
+]
+
+[[d1_databases]]
+binding = "FAX_DB"
+database_name = "fax-machine"
+# Replace this with your own database ID
+database_id = "1903131f-7fce-4369-80ad-4b0517847212"
+
+[[r2_buckets]]
+binding = "FAX_FILES"
+bucket_name = "fax-machine"
+preview_bucket_name = "fax-machine"
+
+[vars]
+# Define environment variables here or as secrets:
+# - TELNYX_API_KEY (from the Mission Control Portal)
+# - TELNYX_APP_ID (from your fax API application)
+# - TELNYX_PHONE_NUMBER (configured to send faxes)
+# - TELNYX_PUBLIC_KEY (from the Mission Control Portal)

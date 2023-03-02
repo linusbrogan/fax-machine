@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Fax machine</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>
+				<span class="material-icons">fax</span>
+				<span>Fax Machine</span>
+			</h1>
+		</header>
+		<div class="wrapper">
+			<div class="card-container">
+				<form
+					action="/send"
+					class="card"
+					enctype="multipart/form-data"
+					method="post"
+					name="fax-request"
+				>
+					<h2>Send a fax</h2>
+					<label for="recipient">Send to</label>
+					<input
+						name="recipient"
+						placeholder="+16789998212"
+						required
+						size="16"
+						type="tel"
+					>
+					<br>
+
+					<label for="media">Choose file</label>
+					<input
+						accept="application/pdf"
+						name="media"
+						required
+						type="file"
+					>
+					<brx>
+					<span class="push-right"></span>
+					<input type="submit" value="send" title="Send fax" class="material-icons">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
