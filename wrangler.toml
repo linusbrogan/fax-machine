@@ -10,7 +10,7 @@ rules = [
 binding = "FAX_DB"
 database_name = "fax-machine"
 # Replace this with your own database ID
-database_id = "1903131f-7fce-4369-80ad-4b0517847212"
+database_id = "4d0b1052-e962-41f0-81dd-5f98d87afc30"
 
 [[r2_buckets]]
 binding = "FAX_FILES"
